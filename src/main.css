@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #34495e;
+}
+
+.parent {
+  -webkit-box-shadow: 3px 3px 4px 0 #00000070, -3px -4px 4px 0 #ffffff17;
+          box-shadow: 3px 3px 4px 0 #00000070, -3px -4px 4px 0 #ffffff17;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  height: 50vh;
+  margin: auto;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+.parent * {
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  width: 35rem;
+  border: 0;
+  text-align: center;
+  outline: none;
+  color: #fff;
+}
+
+.parent h1 {
+  text-shadow: 3px 1px 5px #ffffff54;
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+
+.parent input {
+  border-radius: 3.5rem;
+  padding: 20px 0;
+  background-color: #34495e;
+  -webkit-box-shadow: 2px 3px 5px 0 #00000042 inset, -2px -3px 5px 0 #ffffff2b inset;
+          box-shadow: 2px 3px 5px 0 #00000042 inset, -2px -3px 5px 0 #ffffff2b inset;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.parent input:focus {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 20px 3px #0000009e;
+          box-shadow: 0px 0px 20px 3px #0000009e;
+  color: #131c25;
+}
+
+.parent input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.parent input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.parent input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.parent input::placeholder {
+  color: #fff;
+}
+
+.parent button {
+  border-radius: 3.5rem;
+  padding: 20px 0;
+  -webkit-box-shadow: 3px 3px 4px 0 #00000070, -3px -4px 4px 0 #ffffff17;
+          box-shadow: 3px 3px 4px 0 #00000070, -3px -4px 4px 0 #ffffff17;
+  width: 15rem;
+  cursor: pointer;
+  background-color: #34495e;
+  font-size: 2rem;
+}
+
+.parent button:active {
+  -webkit-box-shadow: 3px 3px 4px 0 #00000029, -3px -4px 4px 0 #ffffff0f;
+          box-shadow: 3px 3px 4px 0 #00000029, -3px -4px 4px 0 #ffffff0f;
+}
+/*# sourceMappingURL=main.css.map */

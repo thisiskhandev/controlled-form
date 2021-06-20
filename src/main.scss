@@ -1,0 +1,80 @@
+$light-dark: #34495e;
+$light: #dfe6e9;
+$purple: #a29bfe;
+$shadow-dark: #00000042;
+$shadow-light: #ffffff2b;
+$bluish-dark: #131c25;
+@mixin boxShadow {
+  box-shadow: 3px 3px 4px 0 #00000070, -3px -4px 4px 0 #ffffff17;
+  width: 15rem;
+}
+@mixin BorRadius {
+  border-radius: 3.5rem;
+  padding: 20px 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: $light-dark;
+}
+.parent {
+  @include boxShadow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 50vh;
+  margin: auto;
+  transform: translate(0, 50%);
+  * {
+    // color: #fff;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    width: 35rem;
+    border: 0;
+    text-align: center;
+    outline: none;
+    color: #fff;
+  }
+  h1 {
+    text-shadow: 3px 1px 5px #ffffff54;
+    letter-spacing: 2px;
+    font-size: 3rem;
+  }
+  input {
+    @include BorRadius;
+    background-color: $light-dark;
+    box-shadow: 2px 3px 5px 0 $shadow-dark inset,
+      -2px -3px 5px 0 $shadow-light inset;
+    transition: all 1s ease;
+    font-size: 2.4rem;
+    font-weight: 600;
+    &:focus {
+      background-color: #fff;
+      box-shadow: 0px 0px 20px 3px #0000009e;
+      color: $bluish-dark;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  button {
+    @include BorRadius;
+    @include boxShadow;
+    cursor: pointer;
+    background-color: $light-dark;
+    font-size: 2rem;
+    &:active {
+      box-shadow: 3px 3px 4px 0 #00000029, -3px -4px 4px 0 #ffffff0f;
+    }
+  }
+}
